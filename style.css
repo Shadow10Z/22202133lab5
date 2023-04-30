@@ -441,8 +441,8 @@ font-size: 3em;
 }
 
 .imgBox img {
-  width: 20rem;
-  height: 20rem;
+  width: 23.5rem;
+  height: 21rem;
   object-fit: cover;
   resize: both;
 }
@@ -472,7 +472,7 @@ font-size: 3em;
   animation-iteration-count: infinite;
 }
 
-.test1{
+#test1{
   height: 40vh;
   background-image: url("https://cdn.discordapp.com/attachments/1084203416294801419/1100757115506806915/image.png");
   background-repeat: no-repeat;
@@ -480,9 +480,10 @@ font-size: 3em;
   background-size: cover;
   background-attachment: fixed;
   text-align: center;
+  transition: background-image 0.5s ease-in-out;
 }
 
-.test2{
+#test2{
   height: 40vh;
   background-image: url("https://cdn.discordapp.com/attachments/1084203416294801419/1100805042245738658/image.png");
   background-repeat: no-repeat;
@@ -495,6 +496,7 @@ font-size: 3em;
   font-style: bold;
   justify-content: space-evenly;
   font-size: 25px;
+  transition: background-image 0.5s ease-in-out;
   color: rgb(19, 180, 92);
 }
 
@@ -717,6 +719,7 @@ h6 {
 
 #footercopyrights {
   text-align: center;
+  align-self: flex-end;
   font-size: 0.77rem;
   margin-top: 50px;
   color: rgb(19, 180, 92);

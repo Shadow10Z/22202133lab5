@@ -41,7 +41,7 @@
         
                    </script>
                 </div>
-                <div class="test1">
+                <div id="test1">
                     
                 </div>
                 
@@ -88,7 +88,7 @@
                             Focused and analytical
                           </li>
                           <li>
-                            Motivatedand responsible
+                            Motivated and responsible
                           </li>
                         </ul>
                       </p>
@@ -96,7 +96,7 @@
                   </p>             
                   <div class="box">
                       <div class="imgBox">
-                        <img src="images/joao.jpg">
+                        <img src="https://cdn.discordapp.com/attachments/1084203416294801419/1101953037091754034/diagrama.drawio-3.png">
                       </div>
                       <div class="author-container">
                         <p class="author-name">
@@ -115,7 +115,7 @@
                   </div>
                 </div>
               
-                <div class="test2">
+                <div id="test2">
                   <p>Introduce an arithemetic expression:</p>
                     <input type="text" id="expression">
                     <br><br>
@@ -151,6 +151,23 @@
                   </p>
                 </div>
               </main>
+           <script>
+              var myElement = document.getElementById('test1');
+              myElement.onmouseover = function() {
+                myElement.style.backgroundImage = "url('https://cdn.discordapp.com/attachments/1084203416294801419/1100805042245738658/image.png')";
+              };
+              myElement.onmouseout = function() {
+                myElement.style.backgroundImage = "url('https://cdn.discordapp.com/attachments/1084203416294801419/1100757115506806915/image.png')";
+              };
+              
+              var myElement2 = document.getElementById('test2');
+              myElement2.onmouseover = function() {
+                myElement2.style.backgroundImage = "url('https://cdn.discordapp.com/attachments/1084203416294801419/1100757115506806915/image.png')";
+              };
+              myElement2.onmouseout = function() {
+                myElement2.style.backgroundImage = "url('https://cdn.discordapp.com/attachments/1084203416294801419/1100805042245738658/image.png')";
+              };
+           </script>
            <script>
             const toggleBtn = document.getElementById('label-togg');
             const content = document.querySelector('.footerPage');
