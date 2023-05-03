@@ -42,7 +42,9 @@
                    </script>
                 </div>
                 <div id="test1">
-                    
+                  <input type="text" id="expressioninsert">
+                  <div id="legend"></div>
+                  <button onclick="inserirLegenda()" id="insert-btn">Insert</button>
                 </div>
                 
                 <div class="container">               
@@ -205,6 +207,13 @@
             const dataFormatada = `${dia} de ${mes}, ${ano}`;
             const elementoData = document.getElementById('footercopyrights');
             elementoData.textContent += dataFormatada;
+           </script>
+           <script>
+            function inserirLegenda() {
+              let legenda = document.getElementById("expressioninsert").value;
+
+              document.getElementById("legend").innerHTML = legenda;
+            }
            </script>
            <script src="calculator.js"></script>
         </body>

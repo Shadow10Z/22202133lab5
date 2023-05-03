@@ -174,7 +174,46 @@ font-size: 3em;
   background: rgb(128, 128, 128);
 }
 
+#insert-btn {
+  outline: none;
+  padding: 0.65rem 1.5rem;
+  font-size: 1.5rem;
+  position: relative;
+  background: transparent;
+  color: #00d9ff;
+  text-transform: uppercase;
+  border: 3px solid  #00d9ff;
+  cursor: pointer;
+  transition: all 0.7s;
+  overflow: hidden;
+  border-radius: 40px;
+  bottom: 2px;
+  left: 23px;
+}
+
+#insert-btn:hover {
+  color: rgb(180, 19, 172);
+}
+
+#insert-btn span {
+  transition: all 0.7s;
+  z-index: -1;
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 25%;
+  background: rgb(128, 128, 128);
+}
+
 #expression[type="text"] {
+  padding: 10px;
+  font-size: 18px;
+  border: 2px solid #00eeff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #00e1ff;
+}
+
+#expressioninsert[type="text"] {
   padding: 10px;
   font-size: 18px;
   border: 2px solid #00eeff;
@@ -188,6 +227,10 @@ font-size: 3em;
   top: 80px;
   right: 648px;
   color: rgb(180, 19, 172);
+}
+
+#legend {
+  color: rgb(19, 180, 92);;
 }
 
 .btminesweeper {
